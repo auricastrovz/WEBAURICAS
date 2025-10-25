@@ -1,1 +1,130 @@
-Página web Auri Castro Vazquez 
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Áurea Castro Vázquez — Currículum</title>
+    <style>
+        :root{--bg:#f7f9fb;--card:#fff;--accent:#2b6cb0;--muted:#6b7280}
+        body{font-family:Inter,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial;margin:0;background:var(--bg);color:#111}
+        .container{max-width:900px;margin:36px auto;padding:28px}
+        header{display:flex;gap:20px;align-items:center}
+        .avatar{width:110px;height:110px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#4fd1c5);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:28px}
+        h1{margin:0;font-size:1.6rem}
+        p.lead{margin:6px 0;color:var(--muted)}
+        .card{background:var(--card);padding:18px;border-radius:10px;box-shadow:0 6px 18px rgba(16,24,40,.06);margin-top:18px}
+        .grid{display:grid;grid-template-columns:1fr 320px;gap:18px}
+        @media (max-width:820px){.grid{grid-template-columns:1fr}}
+        h2{margin:0 0 10px 0;font-size:1.05rem;color:var(--accent)}
+        ul{padding-left:18px;margin:8px 0}
+        .meta{font-size:.95rem;color:var(--muted)}
+        .skill{display:inline-block;background:#eef6ff;color:var(--accent);padding:6px 10px;border-radius:999px;margin:6px 6px 0 0;font-size:.85rem}
+        .contact a{color:var(--accent);text-decoration:none}
+        footer{margin-top:22px;font-size:.85rem;color:var(--muted);text-align:center}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="avatar" aria-hidden="true">AC</div>
+            <div>
+                <h1>Áurea Castro Vázquez</h1>
+                <p class="lead">Estudiante · Apasionada por la tecnología, la sostenibilidad y el diseño centrado en la persona</p>
+                <p class="meta">Ubicación: Madrid, España · Email: <a href="mailto:aurea.castro@example.com">aurea.castro@example.com</a></p>
+            </div>
+        </header>
+
+        <div class="grid">
+            <main>
+                <section class="card" aria-labelledby="perfil-title">
+                    <h2 id="perfil-title">Perfil profesional</h2>
+                    <p>Estudiante universitaria con enfoque multidisciplinar que combina conocimientos técnicos y habilidades creativas. Motivada por resolver problemas reales mediante soluciones accesibles y sostenibles. Busco oportunidades para aplicar y ampliar mis competencias en desarrollo web, análisis de datos y diseño UX.</p>
+                </section>
+
+                <section class="card" aria-labelledby="edu-title">
+                    <h2 id="edu-title">Formación</h2>
+                    <p class="meta"><strong>Grado en Ingeniería Informática</strong> — Universidad Politécnica de Madrid (en curso)</p>
+                    <ul>
+                        <li>Asignaturas destacadas: Estructuras de datos, Bases de datos, Interacción persona-ordenador, Inteligencia artificial</li>
+                        <li>Proyecto reciente: "App de gestión de residuos" — prototipo web que incentiva el reciclaje mediante recompensas locales</li>
+                    </ul>
+                </section>
+
+                <section class="card" aria-labelledby="exp-title">
+                    <h2 id="exp-title">Experiencia profesional (inventada)</h2>
+
+                    <article>
+                        <h3 style="margin:.2rem 0">Desarrolladora web (Prácticas) — GreenCity Labs</h3>
+                        <p class="meta">Jun 2024 — Sep 2024</p>
+                        <ul>
+                            <li>Desarrollo de componentes front-end con HTML, CSS y JavaScript para la plataforma de participación ciudadana.</li>
+                            <li>Mejora de la accesibilidad y rendimiento, reduciendo el tiempo de carga en un 30%.</li>
+                        </ul>
+                    </article>
+
+                    <article>
+                        <h3 style="margin:.2rem 0">Analista junior de datos — Fundación Sostenible</h3>
+                        <p class="meta">Oct 2023 — Feb 2024</p>
+                        <ul>
+                            <li>Tratamiento y visualización de datos ambientales con Python y pandas; creación de dashboards interactivos para toma de decisiones.</li>
+                            <li>Colaboración en la preparación de informes sobre calidad del aire para ayuntamientos locales.</li>
+                        </ul>
+                    </article>
+
+                    <article>
+                        <h3 style="margin:.2rem 0">Voluntaria en UX — Biblioteca Comunitaria</h3>
+                        <p class="meta">Mar 2023 — Jul 2023</p>
+                        <ul>
+                            <li>Investigación con usuarios y prototipado de una interfaz para facilitar el acceso a recursos digitales a personas mayores.</li>
+                            <li>Resultados: aumento del uso de la plataforma en un 22% tras cambios de usabilidad.</li>
+                        </ul>
+                    </article>
+                </section>
+
+                <section class="card" aria-labelledby="projects-title">
+                    <h2 id="projects-title">Proyectos destacados</h2>
+                    <ul>
+                        <li><strong>PlagiaZero</strong> — herramienta educativa para detectar similitudes en trabajos académicos (Python, Flask, SQLite)</li>
+                        <li><strong>EcoMap</strong> — mapa colaborativo para puntos de reciclaje en barrios (React, Leaflet)</li>
+                    </ul>
+                </section>
+            </main>
+
+            <aside>
+                <section class="card contact" aria-labelledby="skills-title">
+                    <h2 id="skills-title">Habilidades</h2>
+                    <div>
+                        <span class="skill">HTML</span><span class="skill">CSS</span><span class="skill">JavaScript</span>
+                        <span class="skill">Python</span><span class="skill">Git</span><span class="skill">SQL</span>
+                    </div>
+                </section>
+
+                <section class="card" aria-labelledby="idiomas-title">
+                    <h2 id="idiomas-title">Idiomas</h2>
+                    <p>Español (nativo), Inglés (B2), Francés (A2)</p>
+                </section>
+
+                <section class="card" aria-labelledby="intereses-title">
+                    <h2 id="intereses-title">Intereses</h2>
+                    <ul>
+                        <li>Tecnologías sostenibles y ciudades inteligentes</li>
+                        <li>Diseño centrado en el usuario y accesibilidad digital</li>
+                        <li>Ciencia de datos aplicada a políticas públicas</li>
+                        <li>Fotografía urbana y viajes</li>
+                    </ul>
+                </section>
+
+                <section class="card" aria-labelledby="contacto-title">
+                    <h2 id="contacto-title">Contacto</h2>
+                    <p class="meta">Email: <a href="mailto:aurea.castro@example.com">aurea.castro@example.com</a></p>
+                    <p class="meta">LinkedIn: <a href="#">linkedin.com/in/aureacastro</a></p>
+                </section>
+            </aside>
+        </div>
+
+        <footer>
+            <small>Currículum generado — contenido inventado según solicitud.</small>
+        </footer>
+    </div>
+</body>
+</html>
